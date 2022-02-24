@@ -1,0 +1,60 @@
+// AnimBlueprintGeneratedClass SniperMachineArm_Skeleton_AnimBlueprint.SniperMachineArm_Skeleton_AnimBlueprint_C
+// Size: 0x1c50 (Inherited: 0x2c0)
+struct USniperMachineArm_Skeleton_AnimBlueprint_C : UAnimInstance {
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2c0(0x08)
+	struct FAnimNode_Root AnimGraphNode_Root; // 0x2c8(0x30)
+	struct FAnimNode_ModifyBone AnimGraphNode_ModifyBone_3; // 0x2f8(0x108)
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace; // 0x400(0x20)
+	struct FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer; // 0x420(0x80)
+	struct FAnimNode_Constraint AnimGraphNode_Constraint_4; // 0x4a0(0x108)
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace; // 0x5a8(0x20)
+	struct FAnimNode_CopyBone AnimGraphNode_CopyBone; // 0x5c8(0xf0)
+	char pad_6B8[0x8]; // 0x6b8(0x08)
+	struct FAnimNode_LookAt AnimGraphNode_LookAt_8; // 0x6c0(0x1b0)
+	struct FAnimNode_Constraint AnimGraphNode_Constraint_3; // 0x870(0x108)
+	struct FAnimNode_Constraint AnimGraphNode_Constraint_2; // 0x978(0x108)
+	struct FAnimNode_LookAt AnimGraphNode_LookAt_7; // 0xa80(0x1b0)
+	struct FAnimNode_LookAt AnimGraphNode_LookAt_6; // 0xc30(0x1b0)
+	struct FAnimNode_LookAt AnimGraphNode_LookAt_5; // 0xde0(0x1b0)
+	struct FAnimNode_Constraint AnimGraphNode_Constraint; // 0xf90(0x108)
+	char pad_1098[0x8]; // 0x1098(0x08)
+	struct FAnimNode_LookAt AnimGraphNode_LookAt_4; // 0x10a0(0x1b0)
+	struct FAnimNode_TwoBoneIK AnimGraphNode_TwoBoneIK; // 0x1250(0x1e0)
+	struct FAnimNode_LookAt AnimGraphNode_LookAt_3; // 0x1430(0x1b0)
+	struct FAnimNode_LookAt AnimGraphNode_LookAt_2; // 0x15e0(0x1b0)
+	struct FAnimNode_LookAt AnimGraphNode_LookAt; // 0x1790(0x1b0)
+	struct FAnimNode_ModifyBone AnimGraphNode_ModifyBone_2; // 0x1940(0x108)
+	struct FAnimNode_ModifyBone AnimGraphNode_ModifyBone; // 0x1a48(0x108)
+	struct FVector FinalTransform; // 0x1b50(0x0c)
+	struct FRotator FinalJointRotation; // 0x1b5c(0x0c)
+	struct AGAC_BP_C* castedGacBp; // 0x1b68(0x08)
+	struct ACSTM_Base_C* CastedCurrentWeapon; // 0x1b70(0x08)
+	struct UPBWeaponSkeletalMeshComponent* GunMesh; // 0x1b78(0x08)
+	struct FVector Socketlocation; // 0x1b80(0x0c)
+	struct FVector NewVar_3; // 0x1b8c(0x0c)
+	struct USceneComponent* arm; // 0x1b98(0x08)
+	struct FVector NewVar_4; // 0x1ba0(0x0c)
+	struct FVector NewVar_5; // 0x1bac(0x0c)
+	struct FRotator ScoketRotation; // 0x1bb8(0x0c)
+	char pad_1BC4[0xc]; // 0x1bc4(0x0c)
+	struct FTransform NewVar_6; // 0x1bd0(0x30)
+	struct FVector HighPowerModeVector; // 0x1c00(0x0c)
+	struct FRotator NewVar_2; // 0x1c0c(0x0c)
+	struct FVector MySpineLocation; // 0x1c18(0x0c)
+	float IKLength; // 0x1c24(0x04)
+	struct FVector StablizerSocketLocation; // 0x1c28(0x0c)
+	float MachineArmReachBackSpeed; // 0x1c34(0x04)
+	struct FVector HighPowerModeVectorRecever; // 0x1c38(0x0c)
+	bool HighPowerMode; // 0x1c44(0x01)
+	char pad_1C45[0x3]; // 0x1c45(0x03)
+	float HighPowerModeVibeSpeed; // 0x1c48(0x04)
+	float HighPowerModeVibeScale; // 0x1c4c(0x04)
+
+	void AnimGraph(struct FPoseLink AnimGraph); // Function SniperMachineArm_Skeleton_AnimBlueprint.SniperMachineArm_Skeleton_AnimBlueprint_C.AnimGraph // (HasOutParms|BlueprintCallable|BlueprintEvent) // @ game+0x1556ec0
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function SniperMachineArm_Skeleton_AnimBlueprint.SniperMachineArm_Skeleton_AnimBlueprint_C.BlueprintUpdateAnimation // (Event|Public|BlueprintEvent) // @ game+0x1556ec0
+	void SetMyArm(struct USceneComponent* arm); // Function SniperMachineArm_Skeleton_AnimBlueprint.SniperMachineArm_Skeleton_AnimBlueprint_C.SetMyArm // (BlueprintCallable|BlueprintEvent) // @ game+0x1556ec0
+	void IntoHighPowerMode(); // Function SniperMachineArm_Skeleton_AnimBlueprint.SniperMachineArm_Skeleton_AnimBlueprint_C.IntoHighPowerMode // (BlueprintCallable|BlueprintEvent) // @ game+0x1556ec0
+	void OUTHighPowerMode(); // Function SniperMachineArm_Skeleton_AnimBlueprint.SniperMachineArm_Skeleton_AnimBlueprint_C.OUTHighPowerMode // (BlueprintCallable|BlueprintEvent) // @ game+0x1556ec0
+	void ExecuteUbergraph_SniperMachineArm_Skeleton_AnimBlueprint(int32_t EntryPoint); // Function SniperMachineArm_Skeleton_AnimBlueprint.SniperMachineArm_Skeleton_AnimBlueprint_C.ExecuteUbergraph_SniperMachineArm_Skeleton_AnimBlueprint // (Final|UbergraphFunction) // @ game+0x1556ec0
+};
+
